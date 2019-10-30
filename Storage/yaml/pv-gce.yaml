@@ -1,0 +1,19 @@
+---
+# gcloud container clusters list
+# gcloud compute disks create --size=1GiB --zone=us-central1-a gce-volume
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: my-pv-gce
+spec:
+  capacity: 
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+    - ReadOnlyMany
+#    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  gcePersistentDisk:
+    pdName: gce-volume
+    fsType: ext4
