@@ -8,7 +8,7 @@ Status | Plan | Section | % |
 ||| Installation, Configuration & Validation | 12% |
 ||| Core Concepts | 19% |
 ||| Networking | 11% |
-||| Security | 12% |
+| In Progress || Security | 12% |
 | Complete | 30.10.2019 | Storage | 7% |
 ||| Cluster Maintenance | 11% |
 ||| Troubleshooting | 10% |
