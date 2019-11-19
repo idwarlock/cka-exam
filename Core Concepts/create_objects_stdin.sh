@@ -1,26 +1,5 @@
-# K8S - Create Objects
+# Create object from STDIN:
 
-Create an object from yaml file:
-
-```bash
-kubectl apply -f <object.yaml>
-```
-
-Create an object from yaml file in specific namespace:
-
-```bash
-kubectl apply -f <object.yaml> -n <namespace_name>
-```
-
-Create objects from all yaml files in current directory:
-
-```bash
-kubectl apply -f .
-```
-
-Create object from STDIN:
-
-```bash
 cat << EOF | kubectl -f -n <namespace_name> -
 apiVersion: apps/v1
 kind: Deployment
@@ -44,4 +23,3 @@ spec:
         ports:
         - containerPort: 80
 EOF
-```
